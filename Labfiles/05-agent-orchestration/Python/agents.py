@@ -29,7 +29,7 @@ async def main():
     # Create the chat client
     credential = AzureCliCredential()
     async with (
-        AzureAIAgentClient(async_credential=credential) as chat_client,
+        AzureAIAgentClient(credential=credential) as chat_client,
     ):    
 
         # Create agents
